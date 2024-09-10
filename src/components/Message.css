@@ -1,0 +1,31 @@
+
+#message {
+    border-radius: 10px;
+}
+
+.sender {
+    max-width: 240px;
+    margin-left: auto;
+    background-color: rgb(111, 202, 238);
+    padding: 5px;
+    margin-bottom: 1.3rem;
+    border-radius: 10px;
+}
+
+.sender p {
+    margin-left: 10px;
+}
+
+.recipient {
+    max-width: 240px;
+    background-color: rgb(178, 223, 241);
+    padding: 5px;
+    margin-bottom: 1.3rem;
+    border-radius: 10px;
+}
+
+.recipient p {
+    text-align: end;
+    margin-right: 10px;
+}
+
