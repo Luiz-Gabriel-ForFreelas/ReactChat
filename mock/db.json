@@ -5,18 +5,6 @@
       "user": "consultant",
       "houer": "00:00:00",
       "message": "Seja bem vindo(a), meu nome é Luiz, como posso te ajudar?"
-    },
-    {
-      "id": 2,
-      "user": "client",
-      "hauer": "10/09/2024",
-      "message": "Bom dia, eu gostaria de realizar uma compra."
-    },
-    {
-      "id": 3,
-      "user": "consultant",
-      "hauer": "10/09/2024",
-      "message": "Claro, posso te ajudar com isso, qual seria seu orçamento?"
     }
   ]
 }
