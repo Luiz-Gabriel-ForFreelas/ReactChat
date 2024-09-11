@@ -10,7 +10,8 @@ import "./Client.css";
 
 const Client = () => {
 
-    const [getList, setList] = useState([])
+    const [getList, setList] = useState([]);
+    const [time, setTime] = useState(new Date());
     const father = "client";
 
     const url = 'http://localhost:3000/chat/'
@@ -20,11 +21,21 @@ const Client = () => {
         setList(response.data);
     })
 
+    useEffect(()=> {
+        const updateTime = () => {
+            setTime(new Date());
+        }
+
+        const invervalId = setInterval(updateTime, 1000);
+
+        return () => clearInterval(invervalId);
+    }, []);
+
     const addMessage = (text, father) => {
         const body = {
             id: getList.length + 1,
             user: father,
-            hauer: new Date().toLocaleDateString(),
+            hauer: time.toLocaleTimeString(),
             message: text
         }
 
